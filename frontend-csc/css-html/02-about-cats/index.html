@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кринжмашина</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Парад говнокода -->
+
+        <div class="header"><span class="first-letter">М</span>урмаркет</div>
+
+        <div class="dummy" id="test1"></div>
+        <div class="dummy" id="test2"></div>
+        <div class="dummy" id="test3"></div>
+        <div class="dummy" id="test4"></div>
+        <div class="dummy" id="test5"></div>
+
+        <input type="checkbox" id="photo1" class="to-modal-window"/>
+        <input type="checkbox" id="photo2" class="to-modal-window"/>
+        <input type="checkbox" id="photo3" class="to-modal-window"/>
+        <input type="checkbox" id="photo4" class="to-modal-window"/>
+        <input type="checkbox" id="photo5" class="to-modal-window"/>
+
+        <div class="gallery">
+            <ul class="cat-list">
+                <li class="cats-card" id="card1">
+                    <a href="#test1" class="dummyRef">
+                        <img class="cats-image" id="cat1" src="CatsPhotos/vibing-cat.gif" alt="Vibing cat">
+                    </a>
+                    <label for="photo1" class="modal-button">
+                        <img class="cats-image-target" id="cat1-target" src="CatsPhotos/vibing-cat.gif" alt="Vibing cat">
+                    </label>
+                    <div class="main-name">Рик</div>
+                </li>
+                <li class="cats-card" id="card2">
+                    <a href="#test2" class="dummyRef">
+                        <img class="cats-image" id="cat2" src="CatsPhotos/cat-dog.jpeg" alt="Very natural looking cat">
+                    </a>
+                    <label for="photo2" class="modal-button">
+                        <img class="cats-image-target" id="cat2-target" src="CatsPhotos/cat-dog.jpeg" alt="Very natural looking cat">
+                    </label>
+                    <div class="main-name"><b><s>Бобик</s>Вася</b></div>
+                </li>
+                <li class="cats-card" id="card3">
+                    <a href="#test3" class="dummyRef">
+                        <img class="cats-image" id="cat3" src="CatsPhotos/chess-cat.jpg" alt="Cat with chess">
+                    </a>
+                    <label for="photo3" class="modal-button">
+                        <img class="cats-image-target" id="cat3-target" src="CatsPhotos/chess-cat.jpg" alt="Cat with chess">
+                    </label>
+                    <div class="main-name">Каспарыч</div>
+                </li>
+                <li class="cats-card" id="card4">
+                    <a href="#test4" class="dummyRef">
+                        <img class="cats-image" id="cat4" src="CatsPhotos/stylish-cat.jpg" alt="Very stylish cat in glasses">
+                    </a>
+                    <label for="photo4" class="modal-button">
+                        <img class="cats-image-target" id="cat4-target" src="CatsPhotos/stylish-cat.jpg" alt="Very stylish cat in glasses">
+                    </label>
+                    <div class="main-name">Том</div>
+                </li>
+                <li class="cats-card" id="card5">
+                    <a href="#test5" class="dummyRef">
+                        <img class="cats-image" id="cat5" src="CatsPhotos/mister-ivl.jpg" alt="Mister Ivl the cat">
+                    </a>
+                    <label for="photo5" class="modal-button">
+                        <img class="cats-image-target" id="cat5-target" src="CatsPhotos/mister-ivl.jpg" alt="Mister Ivl the cat">
+                    </label>
+                    <div class="main-name">Мистер Ивл</div>
+                </li>
+            </ul>
+        </div>
+        <div class="dark-background"></div>
+        <label for="photo1" class="modal-button close" id="close1">
+            ✖
+        </label>
+        <div class="modal" id="modal1">
+            <img class="big-cats-image" src="CatsPhotos/vibing-cat.gif" alt="Vibing cat">
+            <div class="cats-info">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="cats-ref">
+                    <h1 class="cats-name"><b>Рик</b></h1>
+                </a>
+                <div class="desc">Возраст: ~12 лет</div>
+                <div class="desc">Порода: музыкальная</div>
+                <div class="desc">Болезни: адский меломан</div>
+                <div class="desc">Очень позитивный</div>
+                <div class="desc full">Вместе с ним сам идешь в пляс</div>
+            </div>
+        </div>
+        <label for="photo2" class="modal-button close" id="close2">
+            ✖
+        </label>
+        <div class="modal" id="modal2">
+            <img class="big-cats-image" src="CatsPhotos/cat-dog.jpeg" alt="Very natural looking cat">
+            <div class="cats-info">
+                <a href="https://www.youtube.com/watch?v=Z8ZU04U-xAo" class="cats-ref">
+                    <h1 class="cats-name"><b><s>Бобик</s>Вася</b></h1>
+                </a>
+                <div class="desc">Возраст: 7 лет</div>
+                <div class="desc">Порода: <s>терьер</s> уличный</div>
+                <div class="desc">Болезни: нет</div>
+                <div class="desc">Ласковый, немного угловатый</div>
+                <div class="desc full">Самый настоящий и натуральный кот хочет найти хозяина чтобы по-настоящему поиграть с котами</div>
+            </div>
+        </div>
+        <label for="photo3" class="modal-button close" id="close3">
+            ✖
+        </label>
+        <div class="modal" id="modal3">
+            <img class="big-cats-image" src="CatsPhotos/chess-cat.jpg" alt="Cat with chess">
+            <div class="cats-info">
+                <a href="https://www.youtube.com/watch?v=pPi5GqRgWu0" class="cats-ref">
+                    <h1 class="cats-name"><b>Каспарыч</b></h1>
+                </a>
+                <div class="desc">Возраст: 58 лет</div>
+                <div class="desc">Порода: азербайджанец</div>
+                <div class="desc">Болезни: нет</div>
+                <div class="desc">Очень умный кот</div>
+                <div class="desc full">Является грандмастером шахмат, победителем многих турниров, возможно будет вас обеспечивать. От вас требуется знать базовые приципы шахмат и дебюты</div>
+            </div>
+        </div>
+        <label for="photo4" class="modal-button close" id="close4">
+            ✖
+        </label>
+        <div class="modal" id="modal4">
+            <img class="big-cats-image" src="CatsPhotos/stylish-cat.jpg" alt="Very stylish cat in glasses">
+            <div class="cats-info">
+                <a href="https://www.youtube.com/watch?v=zkhRkXZNBY4" class="cats-ref">
+                    <h1 class="cats-name"><b>Том</b></h1>
+                </a>
+                <div class="desc">Возраст: 5 лет</div>
+                <div class="desc">Порода: красавчик</div>
+                <div class="desc">Болезни: неотразимость</div>
+                <div class="desc">Украдет ваше сердечко</div>
+                <div class="desc full">Прячьте себя и своих близких, иначе их у вас уведут</div>
+            </div>
+        </div>
+        <label for="photo5" class="modal-button close" id="close5">
+            ✖
+        </label>
+        <div class="modal" id="modal5">
+            <img class="big-cats-image" src="CatsPhotos/mister-ivl.jpg" alt="Mister Ivl the cat">
+            <div class="cats-info">
+                <a href="https://www.youtube.com/watch?v=7Oq5ENo-NHI" class="cats-ref">
+                    <h1 class="cats-name"><b>Мистер Ивл</b></h1>
+                </a>
+                <div class="desc">Возраст: 11 лет</div>
+                <div class="desc">Порода: черношерстный</div>
+                <div class="desc">Болезни: несварение желудка</div>
+                <div class="desc">Чувствительный нос</div>
+                <div class="desc full">Слишком доверчивый, иногда басит, но в целом очень милый</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Напишите нам:</div>
+            <div><a href="mailto:cats@babuli.ru" class="footer-ref">cats@babuli.ru</a></div>
+            <span><a href="mailto:vnuchek@babuli.ru" class="footer-ref">vnuchek@babuli.ru</a></span>
+            <span class="copyright">&copy; 2021 ООО &laquo;<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Кошачья оборона</a>&raquo;</span>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/town"
+            style="@style/middleText"
+            android:text="@string/currTown"
+            />
+
+
+        <TextView
+            android:id="@+id/weatherNow"
+            style="@style/middleText"
+            android:text="@string/weather1"
+            />
+
+        <ImageView
+            android:id="@+id/main_image"
+            style="@style/BigImage"
+            android:layout_gravity="center"
+            android:src="@drawable/weather1"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/main_temp"
+            style="@style/middleText"
+            android:text="@string/currTemp"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="10dp"
+            >
+
+            <TextView
+                android:id="@+id/humidity"
+                style="@style/InfoPlate"
+                android:text="@string/currHumidity"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="10dp"
+            >
+
+            <TextView
+                android:id="@+id/windSpeed"
+                style="@style/InfoPlate"
+                android:text="@string/currWind"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+        <LinearLayout style="@style/smallWeather">
+            <TextView
+                android:id="@+id/date1"
+                style="@style/smallText"
+                android:text="@string/date1"
+                />
+
+            <ImageView
+                android:id="@+id/day1"
+                style="@style/smallImage"
+                android:src="@drawable/weather1" />
+
+            <TextView
+                android:id="@+id/weather1"
+                style="@style/smallText"
+                android:text="@string/weather1"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/smallWeather">
+            <TextView
+                android:id="@+id/date2"
+                style="@style/smallText"
+                android:text="@string/date2"
+                />
+
+            <ImageView
+                android:id="@+id/day2"
+                style="@style/smallImage"
+                android:src="@drawable/weather2" />
+
+            <TextView
+                android:id="@+id/weather2"
+                style="@style/smallText"
+                android:text="@string/weather2"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/smallWeather">
+            <TextView
+                android:id="@+id/date3"
+                style="@style/smallText"
+                android:text="@string/date3"
+                />
+
+            <ImageView
+                android:id="@+id/day3"
+                style="@style/smallImage"
+                android:src="@drawable/weather3" />
+
+            <TextView
+                android:id="@+id/weather3"
+                style="@style/smallText"
+                android:text="@string/weather3"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/smallWeather">
+            <TextView
+                android:id="@+id/date4"
+                style="@style/smallText"
+                android:text="@string/date4"
+                />
+
+            <ImageView
+                android:id="@+id/day4"
+                style="@style/smallImage"
+                android:src="@drawable/weather4" />
+
+            <TextView
+                android:id="@+id/weather4"
+                style="@style/smallText"
+                android:text="@string/weather4"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/smallWeather">
+            <TextView
+                android:id="@+id/date5"
+                style="@style/smallText"
+                android:text="@string/date5"
+                />
+
+            <ImageView
+                android:id="@+id/day5"
+                style="@style/smallImage"
+                android:src="@drawable/weather5" />
+
+            <TextView
+                android:id="@+id/weather5"
+                style="@style/smallText"
+                android:text="@string/weather5"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

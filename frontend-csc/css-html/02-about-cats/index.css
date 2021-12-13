@@ -1,0 +1,266 @@
+:root {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #1f1f1f;
+}
+
+body {
+    background: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding:10px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    bottom:0;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.header, .footer {
+    color: black;
+    position:fixed;
+    z-index: 8;
+    width:100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.first-letter {
+    color: red;
+}
+
+.gallery {
+    display: block;
+    padding-top: 15vh;
+    transition: 0.3s;
+}
+
+.cat-list {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footer-ref {
+    text-decoration: none;
+    color: #4c4cd8;
+}
+
+.copyright {
+    position: absolute;
+    right: 1%;
+}
+
+.to-modal-window {
+    display: none;
+}
+
+.cats-card {
+    display: inline-block;
+    width: 33vw;
+    transition: 0.3s;
+}
+
+.cats-image {
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.7;
+    object-fit: cover;
+    object-position: 0 0;
+    box-shadow: 2px 8px 8px gray;
+}
+
+.main-name {
+    text-align: center;
+    position: relative;
+    visibility: hidden;
+    color: white;
+    font-size: 48px;
+    top: -160px;
+}
+
+.cats-card:hover .cats-image-target {
+    filter: brightness(50%);
+}
+
+.modal-button:hover ~ .main-name,
+.main-name:hover {
+    visibility: visible;
+}
+
+.cats-image-target {
+    display: none;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 8px 8px gray;
+}
+
+#test1:target ~ .gallery #cat1-target,
+#test2:target ~ .gallery #cat2-target,
+#test3:target ~ .gallery #cat3-target,
+#test4:target ~ .gallery #cat4-target,
+#test5:target ~ .gallery #cat5-target {
+    display: block;
+    transition: 0.3s;
+    opacity: 1;
+    height: 275px;
+}
+
+#test1:target ~ .gallery #cat1,
+#test2:target ~ .gallery #cat2,
+#test3:target ~ .gallery #cat3,
+#test4:target ~ .gallery #cat4,
+#test5:target ~ .gallery #cat5 {
+    transition: 0.3s;
+    display: none;
+}
+
+#test1:target ~ .gallery #card1,
+#test2:target ~ .gallery #card2,
+#test3:target ~ .gallery #card3,
+#test4:target ~ .gallery #card4,
+#test5:target ~ .gallery #card5 {
+    transform: translateY(27px);
+}
+
+#test1:target ~ .gallery{
+    transform: translateX(33%);
+}
+
+#test3:target ~ .gallery{
+    transform: translateX(-33%);
+}
+
+#test4:target ~ .gallery{
+    transform: translateX(-66%);
+}
+
+#test5:target ~ .gallery{
+    transform: translateX(-100%);
+}
+
+.desc:hover {
+    color: cornflowerblue;
+}
+
+.cats-info {
+    display: none;
+    padding: 0 10px;
+    color: white;
+    width: 300px;
+}
+
+.desc {
+    padding-top: 10px;
+}
+
+.cats-name {
+    font-size: 2rem;
+}
+
+.cats-name:hover {
+    text-decoration: underline;
+}
+
+.desc, .cats-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.full {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.cats-ref:active, .cats-ref, .dummyRef {
+    color: white;
+    text-decoration: none;
+}
+
+.close {
+    z-index: 10;
+    display: none;
+}
+
+.modal {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    height: 450px;
+    top: 50%;
+    margin-top: -225px;
+    left: 15vw;
+}
+
+.dark-background {
+    z-index: 9;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.to-modal-window:checked ~ .dark-background {
+    display: inline;
+}
+
+#photo1:checked ~ #modal1,
+#photo2:checked ~ #modal2,
+#photo3:checked ~ #modal3,
+#photo4:checked ~ #modal4,
+#photo5:checked ~ #modal5 {
+    z-index: 10;
+    transition: 1s;
+    opacity: 1;
+}
+
+#photo1:checked ~ #modal1 .big-cats-image,
+#photo2:checked ~ #modal2 .big-cats-image,
+#photo3:checked ~ #modal3 .big-cats-image,
+#photo4:checked ~ #modal4 .big-cats-image,
+#photo5:checked ~ #modal5 .big-cats-image {
+    height: 450px;
+    float:left;
+}
+
+#photo1:checked ~ #modal1 .cats-info,
+#photo2:checked ~ #modal2 .cats-info,
+#photo3:checked ~ #modal3 .cats-info,
+#photo4:checked ~ #modal4 .cats-info,
+#photo5:checked ~ #modal5 .cats-info {
+    display: inline-block;
+}
+
+#photo1:checked ~ #close1,
+#photo2:checked ~ #close2,
+#photo3:checked ~ #close3,
+#photo4:checked ~ #close4,
+#photo5:checked ~ #close5 {
+    color: white;
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    font-size: 50px;
+}

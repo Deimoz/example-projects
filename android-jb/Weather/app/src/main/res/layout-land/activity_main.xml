@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/town"
+        style="@style/middleText"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:text="@string/currTown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/weatherNow"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/weatherNow"
+        style="@style/middleText"
+        android:text="@string/weather1"
+        app:layout_constraintTop_toBottomOf="@id/town"
+        app:layout_constraintStart_toStartOf="@id/town"
+        app:layout_constraintEnd_toEndOf="@id/town"
+        app:layout_constraintBottom_toTopOf="@id/main_temp"
+        />
+
+    <ImageView
+        android:id="@+id/main_image"
+        style="@style/BigImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:src="@drawable/weather1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/town"
+        app:layout_constraintEnd_toEndOf="@id/day1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+    <TextView
+        android:id="@+id/main_temp"
+        style="@style/middleText"
+        android:text="@string/currTemp"
+        app:layout_constraintEnd_toEndOf="@id/town"
+        app:layout_constraintStart_toStartOf="@id/town"
+        app:layout_constraintTop_toBottomOf="@id/weatherNow"
+        app:layout_constraintBottom_toTopOf="@id/humidity"
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        style="@style/InfoPlate.Land"
+        android:text="@string/currHumidity"
+        app:layout_constraintEnd_toEndOf="@id/town"
+        app:layout_constraintStart_toStartOf="@id/town"
+        app:layout_constraintTop_toBottomOf="@id/main_temp"
+        app:layout_constraintBottom_toTopOf="@id/windSpeed"
+        />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        style="@style/InfoPlate.Land"
+        android:text="@string/currWind"
+        app:layout_constraintEnd_toEndOf="@id/town"
+        app:layout_constraintStart_toStartOf="@id/town"
+        app:layout_constraintTop_toBottomOf="@id/humidity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/date1"
+        style="@style/smallText"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/day1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/day1"
+        app:layout_constraintBottom_toTopOf="@id/weather1"
+        app:layout_constraintHorizontal_bias="1"
+        android:text="@string/date1"
+        />
+
+    <ImageView
+        android:id="@+id/day1"
+        style="@style/smallImage.Land"
+        android:src="@drawable/weather1"
+        app:layout_constraintStart_toEndOf="@id/humidity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/day2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+
+        />
+
+    <TextView
+        android:id="@+id/weather1"
+        style="@style/smallText"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@id/day1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/day1"
+        app:layout_constraintTop_toBottomOf="@id/date1"
+        app:layout_constraintHorizontal_bias="1"
+        android:text="@string/weather1"
+        />
+
+    <TextView
+        android:id="@+id/date2"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/date1"
+        app:layout_constraintTop_toTopOf="@id/day2"
+        app:layout_constraintBottom_toTopOf="@id/weather2"
+        android:text="@string/date2"
+        />
+
+    <ImageView
+        android:id="@+id/day2"
+        style="@style/smallImage.Land"
+        app:layout_constraintStart_toStartOf="@id/day1"
+        app:layout_constraintTop_toBottomOf="@id/day1"
+        app:layout_constraintBottom_toTopOf="@id/day3"
+        android:src="@drawable/weather2" />
+
+    <TextView
+        android:id="@+id/weather2"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/weather1"
+        app:layout_constraintBottom_toBottomOf="@id/day2"
+        app:layout_constraintTop_toBottomOf="@id/date2"
+        android:text="@string/weather2"
+        />
+
+    <TextView
+        android:id="@+id/date3"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/date1"
+        app:layout_constraintTop_toTopOf="@id/day3"
+        app:layout_constraintBottom_toTopOf="@id/weather3"
+        android:text="@string/date3"
+        />
+
+    <ImageView
+        android:id="@+id/day3"
+        style="@style/smallImage.Land"
+        app:layout_constraintStart_toStartOf="@id/day1"
+        app:layout_constraintTop_toBottomOf="@id/day2"
+        app:layout_constraintBottom_toTopOf="@id/day4"
+        android:src="@drawable/weather3"
+        />
+
+    <TextView
+        android:id="@+id/weather3"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/weather2"
+        app:layout_constraintBottom_toBottomOf="@id/day3"
+        app:layout_constraintTop_toBottomOf="@id/date3"
+        android:text="@string/weather3"
+        />
+
+    <TextView
+        android:id="@+id/date4"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/date1"
+        app:layout_constraintTop_toTopOf="@id/day4"
+        app:layout_constraintBottom_toTopOf="@id/weather4"
+        android:text="@string/date4"
+        />
+
+    <ImageView
+        android:id="@+id/day4"
+        style="@style/smallImage.Land"
+        app:layout_constraintStart_toStartOf="@id/day1"
+        app:layout_constraintTop_toBottomOf="@id/day3"
+        app:layout_constraintBottom_toTopOf="@id/day5"
+        android:src="@drawable/weather4" />
+
+    <TextView
+        android:id="@+id/weather4"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/weather3"
+        app:layout_constraintBottom_toBottomOf="@id/day4"
+        app:layout_constraintTop_toBottomOf="@id/date4"
+        android:text="@string/weather4"
+        />
+
+    <TextView
+        android:id="@+id/date5"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/date1"
+        app:layout_constraintTop_toTopOf="@id/day5"
+        app:layout_constraintBottom_toTopOf="@id/weather5"
+        android:text="@string/date5"
+        />
+
+    <ImageView
+        android:id="@+id/day5"
+        style="@style/smallImage.Land"
+        android:src="@drawable/weather5"
+        app:layout_constraintStart_toStartOf="@id/day1"
+        app:layout_constraintTop_toBottomOf="@id/day4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/weather5"
+        style="@style/smallText"
+        app:layout_constraintEnd_toEndOf="@id/weather4"
+        app:layout_constraintBottom_toBottomOf="@id/day5"
+        app:layout_constraintTop_toBottomOf="@id/date5"
+        android:text="@string/weather5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

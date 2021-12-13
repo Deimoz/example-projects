@@ -1,0 +1,237 @@
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #1f1f1f;
+}
+
+body {
+    background: whitesmoke;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    grid-gap: 20px;
+}
+
+.header {
+    grid-row: 1;
+    padding:10px;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.container {
+    grid-row: 2;
+}
+
+.footer {
+    display: flex;
+    grid-row: 3;
+    font-family: Arial, sans-serif;
+    bottom:0;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.header, .footer {
+    color: black;
+    position:fixed;
+    z-index: 8;
+    width:100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: whitesmoke;
+}
+
+.first-letter {
+    color: red;
+}
+
+.cats-card {
+    border-radius: 0 0 10px 10px;
+    background-color: ghostwhite;
+    transition: 0.3s;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    box-shadow: 1px 4px 4px gray;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 150px;
+}
+
+.cats-card:hover {
+    box-shadow: 3px 12px 12px gray;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    background: url("CatsPhotos/background.jpg");
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cats-image {
+    height: 200px;
+    border: 4px solid cornflowerblue;
+}
+
+.cats-info {
+    display: flex;
+    padding: 0 10px;
+    grid-column: 1;
+    grid-row: 2;
+    flex-direction: column;
+}
+
+.desc:hover, .additional:hover {
+    color: cornflowerblue;
+}
+
+.cats-ref:hover, .cats-ref:active, .cats-ref {
+    text-decoration: none;
+    color: black;
+}
+
+.cats-name:hover {
+    text-decoration: underline;
+}
+
+.desc {
+    flex-grow: 1;
+}
+
+.cats-name {
+    font-size: 2rem;
+    flex-grow: 2;
+}
+
+.desc, .cats-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.additional-info {
+    display: none;
+}
+
+.additional {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.filter {
+    display: none;
+}
+
+.dot {
+    display: none;
+}
+
+.email {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.copyright {
+    padding-right: 20px;
+}
+
+@media (min-width: 375px) and (max-width: 730px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .cat-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 730px) and (max-width: 1200px) {
+    .footer {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .cat-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .email-elem, .dot {
+        display: inline-block;
+    }
+
+    .footer {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1000px auto;
+        grid-gap: 20px;
+    }
+
+    .cat-list {
+        grid-column: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 450px);
+        grid-auto-rows: 300px;
+        grid-gap: 20px;
+    }
+
+    .filter {
+        display: flex;
+        grid-column: 2;
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .cats-card {
+        grid-template-columns: 225px 225px;
+        grid-template-rows: 200px 100px;
+        width: 450px;
+        height: 300px;
+    }
+
+    .image-container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cats-image {
+        height: 175px;
+    }
+
+    .cats-info {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .additional-info {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        padding: 2px 5px;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .additional.full {
+        flex-grow: 4;
+    }
+}

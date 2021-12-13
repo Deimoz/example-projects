@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Контакты</string>
+    <string name="no_contacts">Невозможно показать контакты</string>
+    <plurals name="num_of_contacts">
+        <item quantity="one">Найден %d контакт</item>
+        <item quantity="few">Найдено %d контакта</item>
+        <item quantity="many">Найдено %d контактов</item>
+        <item quantity="other">Найдено %d контактов</item>
+    </plurals>
+</resources>

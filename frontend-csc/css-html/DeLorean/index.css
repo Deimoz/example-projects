@@ -1,0 +1,142 @@
+:root {
+    font-size: 16px;
+}
+
+.newspaper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: max-content;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newspaper-title {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: calc(1.2 * 1em);
+}
+
+.article, .newspaper-title, .news-photo {
+    padding: 5px;
+    border: 1px solid lightgray;
+}
+
+.title, .newspaper-title-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    text-indent: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.first-letter {
+    font-size: 2em;
+}
+
+.article1 {
+    font-size: calc(1.2 * 1em);
+}
+
+.article2 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+.article4 .paragraph {
+    border-bottom: 1px solid lightgray;
+}
+
+.article2 .title, .article4 .title {
+    text-align: center;
+}
+
+.news-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article4 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+}
+
+.article5 {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+.article6 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.article7 {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+
+.news-photo img {
+    width: 100%;
+}
+
+.radio-input {
+    display: none;
+}
+
+.fonts, .black-theme-label, .font-sizes {
+    font-size: 1.5em;
+}
+
+.fonts-select, .fonts-size-select {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.radio {
+    border: 1px solid lightgray;
+    padding: 3px;
+}
+
+.first-font:checked ~ .newspaper .article {
+    font-family: 'Roboto', sans-serif;
+}
+
+.second-font:checked ~ .newspaper .article{
+    font-family: 'Oswald', sans-serif;
+}
+
+.third-font:checked ~ .newspaper .article {
+    font-family: 'Comforter Brush', cursive;
+}
+
+.first-font-size:checked ~ .newspaper {
+    font-size: 12px;
+}
+
+.second-font-size:checked ~ .newspaper {
+    font-size: 16px;
+}
+
+.third-font-size:checked ~ .newspaper {
+    font-size: 24px;
+}
+
+.first-font-size:checked ~ .font-sizes .radio-size1,
+.second-font-size:checked ~ .font-sizes .radio-size2,
+.third-font-size:checked ~ .font-sizes .radio-size3,
+.first-font:checked ~ .fonts .radio1,
+.second-font:checked ~ .fonts .radio2,
+.third-font:checked ~ .fonts .radio3 {
+    background-color: gray;
+}
+
+.black-theme:checked ~ .newspaper {
+    background-color: #1f1f1f;
+    color: white;
+}

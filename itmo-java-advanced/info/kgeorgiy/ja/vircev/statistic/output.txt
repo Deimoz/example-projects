@@ -1,0 +1,36 @@
+Analyzed file: D:\workspace\metop\concurrent\src\info\kgeorgiy\ja\vircev\statistic\input.txt
+Base statistic
+	Number of sentences: 2
+	Number of words: 8
+	Number of sums: 1
+	Number of numbers: 5
+	Number of dates: 1
+Statistic of sentences
+	Number of sentences: 2
+	Minimum: "I've got $100,000.00 at Monday, May 31, 2021."
+	Maximum: "very very cool test 1 2 3."
+	Minimum length: 26 ("very very cool test 1 2 3.")
+	Maximum length: 45 ("I've got $100,000.00 at Monday, May 31, 2021.")
+	Average value: 35.5
+Statistic of words
+	Number of words: 9
+	Minimum: "at"
+	Maximum: "very"
+	Minimum length: 2 ("at")
+	Maximum length: 6 ("Monday")
+	Average value: 3.7777777777777777
+Statistic of sums
+	Number of sums: 1
+	Minimum: "100 000"
+	Maximum: "100 000"
+	Average value: 100000.0
+Statistic of numbers
+	Number of numbers: 5
+	Minimum: "1"
+	Maximum: "2 021"
+	Average value: 411.6
+Statistic of dates
+	Number of dates: 2
+	Minimum: "31.05.2021, 00:00"
+	Maximum: "31.05.2021, 00:00"
+	Average value: Mon May 31 00:00:00 MSK 2021

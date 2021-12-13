@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="currTown">Воронеж</string>
+    <string name="weather1">Снег</string>
+    <string name="currTemp">666°C</string>
+    <string name="currHumidity">Влажность\n-100%</string>
+    <string name="currWind">Ветер\n 10^10 м/с</string>
+    <string name="date1">22.06</string>
+    <string name="date2">23.06</string>
+    <string name="weather2">Дождь</string>
+    <string name="date3">24.06</string>
+    <string name="weather3">Ясно</string>
+    <string name="date4">25.06</string>
+    <string name="weather4">Облачно</string>
+    <string name="date5">26.06</string>
+    <string name="weather5">Гроза</string>
+</resources>

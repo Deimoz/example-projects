@@ -1,0 +1,73 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimarySecond</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkSecond</item>
+        <item name="colorAccent">@color/colorAccentSecond</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/lightText</item>
+        <item name="android:actionBarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="wrapContent">
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_width">wrap_content</item>
+    </style>
+    
+    <style name="smallImage">
+        <item name ="android:layout_height">70dp</item>
+        <item name ="android:layout_width">70dp</item>
+        <item name ="android:background">#e0e0e0</item>
+        <item name ="android:padding">5dp</item>
+    </style>
+
+    <style name="smallImage.Land">
+        <item name ="android:layout_height">60dp</item>
+        <item name ="android:layout_width">60dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+    </style>
+
+    <style name="BigImage">
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="InfoPlate">
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_width">200dp</item>
+        <item name ="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name= "android:layout_gravity">center</item>
+    </style>
+
+    <style name="InfoPlate.Land">
+        <item name ="android:layout_height">wrap_content</item>
+        <item name ="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="smallText" parent="wrapContent">
+        <item name ="android:textSize">15sp</item>
+    </style>
+
+    <style name="middleText" parent="wrapContent">
+        <item name ="android:layout_gravity">center</item>
+        <item name ="android:textSize">40sp</item>
+    </style>
+
+    <style name="smallWeather" parent="wrapContent">
+        <item name ="android:orientation">vertical</item>
+        <item name ="android:layout_gravity">center_horizontal</item>
+        <item name ="android:gravity">center_horizontal</item>
+        <item name ="android:layout_weight">1</item>
+    </style>
+
+</resources>

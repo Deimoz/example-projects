@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/third_nav"
+    app:startDestination="@id/test_fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/test_fragment"
+        android:name="com.example.fragments.fragments.TestFragment"
+        android:label="TestFragment"
+        tools:layout="@layout/test_fragment">
+        <argument
+            android:name="count"
+            android:defaultValue="0"
+            app:argType="integer"/>
+        <action
+            android:id="@+id/action_test_fragment_self"
+            app:destination="@id/test_fragment" />
+    </fragment>
+</navigation>
